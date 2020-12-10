@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="index.js"></script> -->
+    <script src="calculate1.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="calculator" class="col-lg-4">
+                <div id="label" class="col-sm-12">
+                    <label>Calculator</label>
+                </div>
+                <div style="border:2px solid black; margin-bottom: 10px;">
+                    <div id="History" class="col-sm-12">
+                        <input type="text" id="display-history" disabled />
+                    </div>
+                    <div id="result" class="col-sm-12">
+                        <input type="text" id="display-result" disabled />
+                    </div>
+                </div>
+                <div id="calculator-body" class="col-sm-12">
+                    <div id="btn-group" class="col-sm-12">
+                        <button class="operator" id="ce" onclick="clr()"><span>ce</span></button>
+                        <button class="operator" id="point" value="." onclick="calc('.')"><span>.</span></button>
+                        <button class="operator" id="divide" value="/" onclick="calc('/')"><span>&#247</span></button>
+                        <button class="operator" id="minus" value="-" onclick="calc('-')"><span>-</span></button>
+                    </div>
+                    <div class="col-sm-12" id="btn-group" class="col-sm-12">
+                        <button class="number" id="seven" value="7" onclick="calc('7')">7</button>
+                        <button class="number" id="eight" value="8" onclick="calc('8')">8</button>
+                        <button class="number" id="nine" value="9" onclick="calc('9')">9</button>
+                        <button class="operator" id="multi" value="*" onclick="calc('*')"><span>&times</span></button>
+                    </div>
+                    <div class="col-sm-12" id="btn-group" class="col-sm-12">
+                        <button class="number" id="four" value="4" onclick="calc('4')">4</button>
+                        <button class="number" id="five" value="5" onclick="calc('5')">5</button>
+                        <button class="number" id="six" value="6" onclick="calc('6')">6</button>
+                        <button class="operator" id="plus" value="+" onclick="calc('+')"><span>+</span></button>
+                    </div>
+                    <div class="col-sm-12" id="btn-group" class="col-sm-12">
+                        <button class="number" id="one" value="1" onclick="calc('1')">1</button>
+                        <button class="number" id="two" value="2" onclick="calc('2')">2</button>
+                        <button class="number" id="three" value="3" onclick="calc('3')">3</button>
+                        <button class="operator" id="equal" value="=" onclick="solve()"><span>=</span></button>
+                    </div>
+                    <div class="col-sm-12" id="btn-group" class="col-sm-12">
+                        <button id="empty">a</button>
+                        <button class="number" id="zero" value="0" onclick="calc('0')">0</button>
+                        <button id="empty">a</button>
+                        <button id="empty">a</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- <script>
+    function calc(val) {
+        document.getElementById('display-result').innerHTML = val;
+        console.log(val);
+    }
+</script> -->

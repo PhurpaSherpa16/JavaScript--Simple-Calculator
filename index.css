@@ -1,0 +1,168 @@
+body {
+    background: rgb(204, 204, 204);
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+#label {
+    margin: 2px;
+    margin-top: -15px;
+    color: #29242467;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#label label {
+    font-size: 10px;
+}
+
+#calculator {
+    width: 380px;
+    margin: 20px auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#History input,
+#result input {
+    max-height: 8vh;
+    min-height: 8vh;
+    padding: 15px;
+    text-align: right;
+    width: 100%;
+    border: none;
+    /* padding-top: 35px; */
+    /* box-shadow: inset 6px 6px 9px #5c5959, inset -6px -6px 9px rgba(255, 255, 255, .4); */
+}
+
+#display-history,
+#display-result {
+    font-size: 20px;
+    font-family: Calisto MT;
+}
+
+#calculator-body {
+    /* box-shadow: inset 6px 6px 9px #5c5959, inset -6px -6px 9px rgba(255, 255, 255, .4); */
+    border: 2px solid black;
+}
+
+#btn-group {
+    margin: 10px;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#zero,
+#minus,
+#plus,
+#multi,
+#divide,
+#point,
+#equal,
+#c,
+#ce {
+    padding: 10px;
+    margin: 10px;
+    font-family: Calisto MT;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 6px 6px 9px #5c5959, -6px -6px 9px rgba(255, 255, 255, .4);
+    border-radius: 50%;
+}
+
+#empty {
+    padding: 10px;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: auto;
+    border: none;
+    background: rgb(204, 204, 204);
+    color: rgb(204, 204, 204);
+}
+
+#one:hover,
+#two:hover,
+#three:hover,
+#plus:hover,
+#four:hover,
+#five:hover,
+#six:hover,
+#minus:hover,
+#seven:hover,
+#eight:hover,
+#nine:hover,
+#multi:hover,
+#divide:hover,
+#zero:hover,
+#point:hover,
+#equal:hover,
+#c:hover,
+#ce:hover {
+    background: #d9d2d2;
+}
+
+#one:active,
+#two:active,
+#three:active,
+#four:active,
+#five:active,
+#six:active,
+#seven:active,
+#eight:active,
+#nine:active,
+#plus:active,
+#minus:active,
+#multi:active,
+#divide:active,
+#zero:active,
+#point:active,
+#equal:active,
+#c:active,
+#ce:active {
+    box-shadow: inset 6px 6px 9px #5c5959, inset -6px -6px 9px rgba(255, 255, 255, .4);
+    color: black;
+}
+
+#minus {
+    background: rgb(240, 177, 135);
+    ;
+    color: white;
+    font-size: 25px;
+}
+
+#plus {
+    background: rgb(69, 157, 69);
+    color: white;
+}
+
+#multi {
+    background: #ff968f;
+    color: white;
+}
+
+#divide {
+    background: rgb(97, 97, 235);
+    color: white;
+}
+
+#point {
+    background: rgb(225, 107, 148);
+    color: white;
+}
+
+#equal {
+    background: rgb(175, 141, 78);
+    color: white;
+}
